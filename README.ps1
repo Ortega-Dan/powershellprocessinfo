@@ -15,3 +15,8 @@ $maprocess[0].
 
 # ... and BEFORE HITTING ENTER/ you hit Ctrl + Space ... and it will 
 # offer you all the options that object has
+
+
+# Another option
+$p = Get-Process firefox
+> $p.Parent.Id

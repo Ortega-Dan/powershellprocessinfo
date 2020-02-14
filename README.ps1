@@ -20,3 +20,8 @@ $maprocess[0].
 # Another option
 $p = Get-Process firefox
 > $p.Parent.Id
+
+
+############### ACTUAL USAGE IN SYNERGETICS STUCKED PROCESSES
+$maprocess = Get-CimInstance -Class Win32_Process -Filter "Name = 'RecostarPlugin.exe'"
+$maprocess[0].CommandLine
